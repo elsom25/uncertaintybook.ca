@@ -1,0 +1,70 @@
+$font-color: #46636d;
+$bold-font-color: #ec433d;
+$background-color: #a0dae7;
+$highlight-color: white;
+
+::-moz-selection { background:transparentize($highlight-color, .5); }
+::selection { background:transparentize($highlight-color, .5); }
+
+html, body {
+  background: $background-color;
+  color: $font-color;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+section {
+  flex: 1;
+  margin-top: 10vh;
+}
+
+h1 {
+  color: $bold-font-color;
+  margin-top: 0;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 400px) {
+    font-size: 3rem;
+  }
+
+  span {
+    background: $highlight-color;
+    padding: .5rem;
+  }
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: .5rem 0;
+
+  @media screen and (min-width: 400px) {
+    font-size: 1.45rem;
+  }
+}
+
+p {
+  margin: .5rem 0;
+}
+
+a {
+  border-bottom: 1px solid;
+  color: $font-color;
+  padding: .15rem;
+  text-decoration: initial;
+
+  &:hover, &:active { background: $highlight-color; }
+}
+
+small {
+  font-size: 65%;
+
+  @media screen and (min-width: 400px) {
+    font-size: 80%;
+  }
+}

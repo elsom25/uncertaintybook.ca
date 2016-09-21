@@ -1,0 +1,31 @@
+doctype html
+html.no-js(lang="en-ca")
+  head
+    meta charset="utf-8"
+    meta http-equiv="x-ua-compatible" content="ie=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta name="description" content="Embracing Uncertainty: A Product Team's Handbook. Building new and innovative software products is hard enough on its own, especially in today’s fast paced world. Mix in the added complexity of building products for an external client, and it can be outright chaos! In Embracing Uncertainty: A product team’s handbook, Katie Cerar, Jesse McGinnis, and Ben Morris explore how they’ve built successful products with their clients at Boltmade time and time again. This book illustrates how to acknowledge, embrace, and plan for the uncertainty and risk that exist in any software project. It teaches you how to involve your client directly in the product development life-cycle to foster empathetic and productive relationships. Embracing Uncertainty also highlights how fostering autonomy, ownership, and responsibility on your teams leads to better informed decisions and more creative solutions."
+
+    title Embracing Uncertainty
+
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Source+Code+Pro:300"
+    = stylesheet_link_tag "vendor.css"
+    = stylesheet_link_tag "style.css"
+
+    = favicon_tag "favicon.ico"
+
+    /[if lt IE 9]
+      = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+      = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"
+      = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"
+
+  body(class=page_classes)
+    == yield
+
+    javascript:
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src="https://www.google-analytics.com/analytics.js";
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga("create","TODO");ga("send","pageview");
