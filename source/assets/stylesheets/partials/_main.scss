@@ -9,6 +9,7 @@ $highlight-color: white;
 html, body {
   background: $background-color;
   color: $font-color;
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
 }
 
@@ -27,13 +28,13 @@ section {
 h1 {
   color: $bold-font-color;
   font-size: 2.25rem;
+  font-weight: 700;
   text-transform: uppercase;
 
   display: inline;
   background: $highlight-color;
   box-shadow: .25em 0 0 $highlight-color, -.25em 0 0 $highlight-color;
-  padding: .15em 0 .05em;
-  line-height: .975;
+  line-height: .915;
 
   span {
     position: relative;
@@ -49,6 +50,7 @@ h1 {
 
 h2 {
   font-size: 1.15rem;
+  font-weight: 600;
   margin: 2rem 0 .5rem;
 
   @include medium-up { font-size: 1.45rem; }
