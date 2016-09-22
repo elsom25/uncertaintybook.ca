@@ -20,7 +20,7 @@ main {
 }
 
 section {
-  flex: 1;
+  flex: 1 1 auto;
   margin-top: 10vh;
 }
 
@@ -62,7 +62,7 @@ a {
   border-bottom: 1px solid;
   color: $font-color;
   padding: .15rem;
-  text-decoration: initial;
+  text-decoration: none;
 
   &:hover, &:active { background: $highlight-color; }
 }
