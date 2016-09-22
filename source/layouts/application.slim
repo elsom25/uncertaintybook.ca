@@ -15,17 +15,9 @@ html.no-js(lang="en-ca")
     = favicon_tag "favicon.ico"
 
     /[if lt IE 9]
-      = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+      = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
       = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"
-      = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"
+      = javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"
 
   body(class=page_classes)
     == yield
-
-    javascript:
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src="https://www.google-analytics.com/analytics.js";
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga("create","TODO");ga("send","pageview");
