@@ -26,20 +26,30 @@ section {
 
 h1 {
   color: $bold-font-color;
-  margin-top: 0;
+  font-size: 2.25rem;
   text-transform: uppercase;
 
+  display: inline;
+  background: $highlight-color;
+  box-shadow: .25em 0 0 $highlight-color, -.25em 0 0 $highlight-color;
+  padding: .15em 0 .05em;
+  line-height: .95;
+
   span {
-    background: $highlight-color;
-    padding: .5rem;
+    position: relative;
+
+    &:after {
+      content: "\a";
+      white-space: pre;
+    }
   }
 
-  @include medium-up { font-size: 3rem; }
+  @include medium-up { font-size: 3.25rem; }
 }
 
 h2 {
   font-size: 1.25rem;
-  margin: .5rem 0;
+  margin: 2rem 0 .5rem;
 
   @include medium-up { font-size: 1.45rem; }
 }

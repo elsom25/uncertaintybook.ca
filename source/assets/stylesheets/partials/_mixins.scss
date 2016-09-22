@@ -1,5 +1,5 @@
 @mixin medium-up {
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 26rem) {
     @content;
   }
 }
