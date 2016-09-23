@@ -25,6 +25,10 @@ section {
   margin-top: 10vh;
 }
 
+footer {
+  img { max-width: 8rem; }
+}
+
 h1 {
   color: $bold-font-color;
   font-family: 'Roboto Condensed', sans-serif;
