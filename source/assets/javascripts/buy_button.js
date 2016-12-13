@@ -32,7 +32,6 @@
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
           "product": {
-            "buttonDestination": "checkout",
             "variantId": "all",
             "width": "240px",
             "contents": {
@@ -41,8 +40,8 @@
               "variantTitle": false,
               "price": false,
               "description": false,
-              "buttonWithQuantity": true,
-              "button": false,
+              "buttonWithQuantity": false,
+              "button": true,
               "quantity": false
             },
             "text": {
@@ -112,8 +111,8 @@
           "modalProduct": {
             "contents": {
               "variantTitle": false,
-              "buttonWithQuantity": true,
-              "button": false,
+              "buttonWithQuantity": false,
+              "button": true,
               "quantity": false
             },
             "styles": {
