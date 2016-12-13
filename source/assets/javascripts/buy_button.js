@@ -34,15 +34,15 @@
           "product": {
             "buttonDestination": "checkout",
             "variantId": "all",
-            "width": "160px",
+            "width": "240px",
             "contents": {
               "img": false,
               "title": false,
               "variantTitle": false,
               "price": false,
               "description": false,
-              "buttonWithQuantity": false,
-              "button": true,
+              "buttonWithQuantity": true,
+              "button": false,
               "quantity": false
             },
             "text": {
